@@ -13,19 +13,19 @@ Adhost2 is a script that updates the /etc/hosts file on a Linux system with a li
 Run the script with sudo privileges:
 
 ```bash
-sudo ./adhost2
+sudo ./adhost2.sh
 ```
 
 If you want to use a custom host list, specify the file path using the -h option:
 
 ```bash
-sudo ./adhost2 -h /path/to/custom-host-list
+sudo ./adhost2.sh -h /path/to/custom-host-list
 ```
 
 To uninstall Adhost2 and restore the original /etc/hosts file, run:
 
 ```bash
-sudo ./adhost2 uninstall
+sudo ./adhost2.sh uninstall
 ```
 
 ## Prerequisites
@@ -38,7 +38,7 @@ sudo ./adhost2 uninstall
 - The script must be run from the hosts directory (hint: from the unzip dir).
 - If you interrupt the script with Ctrl+C, it will restore the original /etc/hosts file.
 - The script must be run with sudo privileges.
-- The default host list is /usr/share/adhost/adhost2.
+- The default host list is /usr/share/adhost/adhost2.sh.
 
 ## License
 
